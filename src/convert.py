@@ -1,13 +1,15 @@
-import supervisely as sly
 import os
-import string
-from dataset_tools.convert import unpack_if_archive
-import src.settings as s
-from urllib.parse import unquote, urlparse
-from supervisely.io.fs import get_file_name, file_exists, get_file_ext
 import shutil
+import string
+from urllib.parse import unquote, urlparse
 
+import supervisely as sly
+from dataset_tools.convert import unpack_if_archive
+from supervisely.io.fs import file_exists, get_file_ext, get_file_name
 from tqdm import tqdm
+
+import src.settings as s
+
 
 def download_dataset(teamfiles_dir: str) -> str:
     """Use it for large datasets to convert them on the instance"""
@@ -72,7 +74,7 @@ def convert_and_upload_supervisely_project(
 ) -> sly.ProjectInfo:
 
     dataset_path = "captcha"
-    batch_size = 30
+    batch_size = 500
     images_ext = ".png"
     ann_ext = ".txt"
     ds_name = "ds"
