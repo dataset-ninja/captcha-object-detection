@@ -20,7 +20,7 @@ HIDE_DATASET = True  # set False when 100% sure about repo quality
 ##################################
 # * After uploading to instance ##
 ##################################
-LICENSE: License = License.BSD_3_Clause(source_url="https://github.com/youthamj/captcha/blob/master/LICENSE", redistributable=False)
+LICENSE: License = License.BSD_3_Clause(source_url="https://github.com/youthamj/captcha/blob/master/LICENSE")
 APPLICATIONS: List[Union[Industry, Domain, Research]] = [Domain.OCR(is_used=False), Industry.Security(is_used=False)]
 CATEGORY: Category = Category.Security()
 
