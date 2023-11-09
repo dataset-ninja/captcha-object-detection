@@ -1,5 +1,1 @@
-
-Sample image template:
-<img src="https://github.com/dataset-ninja/gland-segmentation/assets/78355358/f158d0dd-71d5-41a2-aba5-4a5f57d54c35" alt="image" width="800">
-
-<span style="font-size: smaller; font-style: italic;">Image description.</span>
+**Captcha Object Detection** is a dataset for an object detection task and it consists of 100000 images with 650000 labeled objects belonging to 54 different classes including numbers (*1*, *2*, *3* .. etc.) and letters: (*M*, *d*, *Y*, *R*, *6*, *C*, *f*, *s*, *a*, *J*, *y*, *2*, *t*, *Q*, *G*, *K*, *E*, *g*, *k*, *c*, *z*, *9*, *p*, *P*, *S*, and more). Dataset made for defining captcha elements. It is generated using a forked version of the [Captcha library by lepture](https://github.com/lepture/captcha). 
